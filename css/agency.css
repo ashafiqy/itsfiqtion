@@ -3,6 +3,17 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@font-face {
+    font-family: SoulMarker_Handwriting_Font;
+    src: url('SoulMarker_Handwriting_Font.otf');
+}
+
+
+@font-face {
+    font-family: SoulMarkerLight;
+    src: url('SoulMarker_Light.otf');
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -149,14 +160,15 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
-.navbar-custom {
-    background-image: url('../img/header-bg.jpg')
-  background-color: #222222;
-  border-color: transparent;
+.navbar-default {
+    background-color: white;
+    border-color: transparent;
+    min-height: 100px
 }
-.navbar-custom .navbar-brand {
-  color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+.navbar-default .navbar-brand {
+    color: #fed136;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,

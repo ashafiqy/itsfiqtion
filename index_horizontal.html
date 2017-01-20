@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--DO LIKE A IF YOU HOVER LEFT/WALK LEFT RIGHT, HOVER RIGHT/WALK RIGHT PICTURE , then mobile how??? -->
+<html>
+    <head>
+        <title>Hey, It's Fiqtion!</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Website Horizontal Scrolling with jQuery" />
+        <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
+<!--        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>-->
+        
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Theme CSS -->
+        <link href="css/agency.css" rel="stylesheet">
+        
+    </head>
+<!--
+    <style>
+        a{
+            color:#fff;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        span.reference{
+            position:fixed;
+            left:10px;
+            bottom:10px;
+            font-size:13px;
+            font-weight:bold;
+        }
+        span.reference a{
+            color:#fff;
+            text-shadow:1px 1px 1px #000;
+            padding-right:20px;
+        }
+        span.reference a:hover{
+            color:#ddd;
+            text-decoration:none;
+        }
+
+    </style>
+-->
+    <body>
+    <script>
+        $(function(){
+            $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+            $(".post").wrap("<td></td>");
+            $("body").mousewheel(function(event, delta) {
+                this.scrollLeft -= (delta * 30);
+                event.preventDefault();
+            });
+        });
+	</script>
+        
+    <div id="content">
+        
+		<div id="section-1">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Welcome welcome YAYYYYYYYYYYY!</h2>
+			<p>Hey there! I'm A.Shafiq Yussaini (shorter version for Abdul Shafiq Bin Mohd Yussaini HAHA) and I warmly welcome you to my humble little corner here on the Internet ^^</p>
+			<p>Dreaming, Trying (and-failing-horribly-until-I-hopefully-succeed-after-like-20-years-worth-of-attempts-HAHAHA-^^), Always Remember To Smile</p>
+		</div>
+		<div id="section-2">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>About Me</h2>
+			<p>Fluffffff and some random stuff about who I am</p>
+			<p>Need to think about overall design, what are the key aspects about being me? (I dunno, maybe chilling at a cafe by myself with a good book and my laptop? HAHAHA). Aim fo things that are not super actionable verby like words, more light-hearted</p>
+		</div>
+		<div id="section-3">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>What Do I Do?</h2>
+			<p>Probably something more serious than the About Me, generally talking about skills and stuff</p>
+			<p>Maybe draw something out? Prolly gonna put actionable-esque things here (Like writing, doing-kinda-stuff)</p>
+		</div>
+		<div id="section-4">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Portfolio</h2>
+			<p>*Need to figure out how to lock this screen so that it can only scroll vertically (horizontal movement controlled by navbar or prolly I might add buttons/arrows)*</p>
+            <p>Here is where I'll post about things I made/done that I'm happy/proud/super excited to show people *--> Maybe do a random distribution and analysis of skittles and it's color distribution??? :]]]*</p>
+			<p>Need to figure out a clean way to show my stuff, maybe dropdown/inflater-on-click?, wanted to minimize words yet maximize viewing efficiency for users</p>
+		</div>
+            <div id="section-5">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Resume</h2>
+			<p>Something simple, highlight key milestones in education/life/volunteering/etc</p>
+			<p>Should be visually informative, not textually(is this even a word? LOL). Place a link? -> I think maybe contact me if you want the full resume? I dunno -> go and see what other people are doing</p>
+            <p>Could do a horizontal timeline thing, highlighting moments in my life? (Could be done for about me as well)</p>
+		</div>
+		<div id="section-6">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Musings</h2>
+			<p>UNSURE. I think just a place to share things that I think are cool. Could link to FB and other SMs. Dunno. UNSURE.</p>
+		</div>
+        <div id="section-7">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Contact Me!</h2>
+			<p>Standard Contact Me Page -> With form and such</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+            
+	</div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="itsFiqtion" class="navbar-brand page-scroll" href="#section-1" onclick="onClick()">It's Fiqtion</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="navigation">
+                    <li class="hidden">
+                        <a href="#section-1"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-2">About Me!</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-3">What do I do?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-4">Portfolio</a>
+<!--                        Thinking of changing to: "Things that I'm proud of"-->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-5">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-6">Musings</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#section-7">Contact Me!</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        
+    
+
+        <!-- The JavaScript -->
+<!--        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    /*
+                    if you want to use one of the easing effects:
+                     */
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                    
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            function onClick(){
+                event.preventDefault();
+
+                //    button click
+                var $anchor = $(this);
+                /*
+                if you want to use one of the easing effects:
+                 */
+                $('html, body').stop().animate({
+                    scrollLeft: $($.attr(this, 'section-1')).offset().left
+                }, 1500,'easeInOutExpo');
+
+                $('html, body').stop().animate({
+                    scrollLeft: $($.attr(this, 'section-1')).offset().left
+                }, 1000);
+                event.preventDefault(); 
+            }
+        </script>
+                
+    </body>
+</html>
